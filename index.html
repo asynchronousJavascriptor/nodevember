@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <h2>Piano & Guitars</h2>
+            <div id="links">
+                <a class="lnk" href="#">Piaonos</a>
+                <a class="lnk" href="#">Guitars</a>
+                <a class="lnk" href="#">Audio Balance</a>
+                <a class="lnk" href="#">Creative Instruments</a>
+                <a class="lnk" href="#">Reviews</a>
+            </div>
+            <div id="right">
+                <i class="ri-search-line"></i>
+                <i class="ri-disc-line"></i>
+                <i class="ri-store-2-line"></i>
+                <i class="ri-wallet-3-line"></i>
+            </div>
+        </div>
+        <div class="lnk" id="prev">
+            <h3>Ming Hung<br>Shung</h3>
+            <i class="ri-arrow-left-line"></i>
+        </div>
+        <div class="lnk" id="next">
+            <h3>Tung Tung<br>Shung</h3>
+            <i class="ri-arrow-right-line"></i>
+        </div>
+        <div id="center">
+            <i id="pause" class="ri-pause-mini-line"></i>
+            <img class="shift" src="./files/violin.png" alt="">
+            <img class="lnk" id="rightimg" src="./files/violin.png" alt="">
+            <img class="lnk" id="leftimg" src="./files/violinside.png" alt="">
+        </div>
+        <div class="shift" id="specs">
+            <h4>Musical Instrument</h4>
+            <h1>Ming Huing<br>Zhu 907</h1>
+            <h5>$3,470</h5>
+        </div>
+        <div class="shift" id="stars">
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-half-s-fill"></i>
+            <h4>User Reviews</h4>
+        </div>
+        <button class="shift" id="play">Play Now</button>
+        <div id="player">
+            <i class="ri-disc-line"></i>
+            <div id="text">
+                <h3>Chandlower</h3>
+                <div id="song">
+                    <div id="prg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <audio src="./files/music.mp3"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ogg";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./files/bg.png);
+    background-size: cover;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5%;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    /* background-color: #fff; */
+}
+
+#nav h2{
+    font-weight: 100;
+}
+
+#nav #links{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav #links a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+#nav #links a:nth-child(1){
+    margin-left: 0;
+}
+
+#nav #right i{
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+#nav #right i:last-child{
+    margin-left: 60px;
+}
+
+#prev{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 150px;
+    height: 70px;
+    /* background-color: red; */
+    color: #fff;
+}
+
+#prev h3{
+    font-family: "Gilroy";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#next{
+    position: absolute;
+    right: 5%;
+    text-align: right;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 150px;
+    height: 70px;
+    color: #fff;
+}
+
+#next h3{
+    font-family: "Gilroy";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#center img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65vh;
+    filter: drop-shadow(0 0 45px orangered);
+}
+
+#center #rightimg{
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translate(-50%, -50%);
+    height: 45vh;
+    filter: blur(5px);
+    filter: blur(5px) drop-shadow(0 0 45px orangered) drop-shadow(0 0 15px rgba(255, 68, 0, 0.527));
+}
+
+#center #leftimg{
+    position: absolute;
+    top: 50%;
+    left: -220px;
+    transform: translate(-50%, -50%);
+    height: 45vh;
+    filter: blur(5px) drop-shadow(0 0 45px orangered) drop-shadow(0 0 15px rgba(255, 68, 0, 0.521));
+}
+
+#specs{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+}
+
+#specs h4{
+    font-family: "Gilroy";
+    font-size: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+#specs h1{
+    font-family: "Gilroy";
+    font-weight: 300;
+}
+
+#specs h5{
+    font-family: "Gilroy";
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#stars{
+    position: absolute;
+    bottom: 20%;
+    right: 12%;
+    text-align: right;
+    color: #fff;
+    /* background-color: red; */
+}
+
+#stars i{
+    font-size: 12px;
+    color: rgb(255, 174, 0);
+}
+
+#stars h4{
+    font-family: "Gilroy";
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 3px;
+}
+
+button{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    color: orangered;
+    border: 1.2px solid orangered;
+    box-shadow: 0 0 5px orangered;
+    text-shadow: 0 0 4px orangered;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding: 17px 42px;
+    padding-right: 32px;
+    transform-style: preserve-3d;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    cursor: pointer;
+}
+
+#main button:hover{
+    box-shadow: 0 30px 20px -15px #ff4800b6;
+    transform: translate(-50%, 0%) scale3d(1, 1, 1) rotateX(34deg) rotateY(14deg) rotateZ(0deg) translate3d(0px, -10px, 0px) skew(5deg, -9deg) !important;
+}
+
+#player{
+    padding: 0% 5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-image: url(./files/bg.png);
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    position: absolute;
+    bottom: -15vh;
+    z-index: 999;
+}
+
+#text{
+    width: 100%;
+}
+
+#text h3{
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#player i{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(133, 123, 98);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#song{
+    width: 100%;
+    height: 5px;
+    margin-top: 8px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgb(133, 123, 98);
+}
+
+#prg{
+    width: 50%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(230, 230, 230);
+}
+
+#pause{
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 999;
+    cursor: pointer;
+}
